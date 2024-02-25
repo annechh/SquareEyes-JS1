@@ -1,11 +1,11 @@
-@import url(/css/imports/basic-styles.css);
+@import url(basic-styles.css);
 
-@import url(/css/imports/header.css);
-@import url(/css/imports/footer.css);
-@import url(/css/imports/hover.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(hover.css);
 
-@import url(/css/imports/media-header.css);
-@import url(/css/imports/media-footer.css);
+@import url(media-header.css);
+@import url(media-footer.css);
 
 
 
