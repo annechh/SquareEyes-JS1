@@ -106,7 +106,7 @@ function purchaseButtonHtml() {
                 resetCartsHtml();
                 localStorage.removeItem('cart')
                 alert('Thank you for your purchase')
-                window.location.href = '/html/checkout-success.html'
+                window.location.href = '../html/checkout-success.html'
             }
         });
 }
