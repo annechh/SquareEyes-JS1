@@ -102,7 +102,8 @@ function formatCurrency(total) {
 function purchaseButtonHtml() {
     let buyButton = document.getElementById('buyButton');
         buyButton.classList.add('btn');
-        buyButton.addEventListener('click', () => {
+        buyButton.addEventListener('click', (event) => {
+            event.preventDefault();
             if (getCart()) {
                 alert('Your cart is empty')
             } else {
