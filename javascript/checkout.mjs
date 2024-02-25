@@ -11,9 +11,6 @@ function createHtmlForMovie(movie) {
         cartListMovies.classList.add('cart-list');
         cartListMovies.setAttribute('movie-id', movie.id)
 
-    // let imgContainer = document.createElement('div');
-    //     imgContainer.classList.add('imgStyleContainer');
-
     let infoContainer = document.createElement('div');
         infoContainer.classList.add('infoStyleContainer');
 
@@ -61,7 +58,6 @@ function createHtmlForMovie(movie) {
             removeMovieFromCart(event);
             updateTotalCartPrice(getCart())
         });
-        console.log("Remove button",removeButton);
         
         cartListMovies.append(linkToMovieInfoPage, infoContainer);
         linkToMovieInfoPage.appendChild(movieImgInCart);
@@ -81,12 +77,12 @@ let totalPrice = 0;
 export function displayTotalPrice(movie) {
     movie??[]
     movie.forEach(movie => {
-        totalPrice += movie.price * movie.quantity;
+        totalPrice += movie.price && movie.discountedPrice * movie.quantity;
     });
     
     let formattedTotalPrice = formatCurrency(totalPrice);
     let displayTotalPrice = document.getElementById ('totalPriceCheckout');
-    displayTotalPrice.textContent = `Total Price: ${formattedTotalPrice}`;
+    displayTotalPrice.textContent = `Total Price Kr: ${formattedTotalPrice}`;
     
 }
 

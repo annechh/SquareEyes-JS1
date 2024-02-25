@@ -96,6 +96,6 @@ export function updateTotalCartPrice(cart) {
     }
     let updatedCartTotal = cart.reduce(reducePrice, totalPrice);
         let updateCart = document.getElementById('totalPriceCheckout');
-        updateCart.textContent = "Total price: " + Math.round(updatedCartTotal *100)/100
+        updateCart.textContent = "Total Price Kr: " + Math.round(updatedCartTotal *100)/100
 }
 
