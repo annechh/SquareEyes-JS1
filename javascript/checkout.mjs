@@ -75,7 +75,6 @@ function createHtmlForMovie(movie) {
 
 let totalPrice = 0;
 export function displayTotalPrice(movie) {
-    movie??[]
     movie.forEach(movie => {
         totalPrice += movie.price && movie.discountedPrice * movie.quantity;
     });
