@@ -82,7 +82,7 @@ export function displayTotalPrice(movie) {
     
     let formattedTotalPrice = formatCurrency(totalPrice);
     let displayTotalPrice = document.getElementById ('totalPriceCheckout');
-    displayTotalPrice.textContent = `Total Price: ${formattedTotalPrice}`;
+    displayTotalPrice.textContent = `Total Price Kr: ${formattedTotalPrice}`;
     
 }
 
