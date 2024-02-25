@@ -82,7 +82,7 @@ export function displayTotalPrice(movie) {
     
     let formattedTotalPrice = formatCurrency(totalPrice);
     let displayTotalPrice = document.getElementById ('totalPriceCheckout');
-    displayTotalPrice.textContent = `Total Price Kr: ${formattedTotalPrice}`;
+    displayTotalPrice.textContent = `Total Price: ${formattedTotalPrice}`;
     
 }
 
@@ -106,6 +106,7 @@ function purchaseButtonHtml() {
                 resetCartsHtml();
                 localStorage.removeItem('cart')
                 alert('Thank you for your purchase')
+                window.location.href = '/html/checkout-success.html'
             }
         });
 }
