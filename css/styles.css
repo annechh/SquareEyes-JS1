@@ -1,12 +1,12 @@
-@import url(/css/imports/basic-styles.css);
-@import url(/css/imports/genreSort.css);
+@import url(imports/basic-styles.css);
+@import url(imports/genreSort.css);
 
-@import url(/css/imports/header.css);
-@import url(/css/imports/footer.css);
-@import url(/css/imports/hover.css);
+@import url(imports/header.css);
+@import url(imports/footer.css);
+@import url(imports/hover.css);
 
-@import url(/css/imports/media-header.css);
-@import url(/css/imports/media-footer.css);
+@import url(imports/media-header.css);
+@import url(imports/media-footer.css);
 
 
 .loader {
