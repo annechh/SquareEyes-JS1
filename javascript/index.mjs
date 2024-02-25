@@ -19,7 +19,6 @@ function createMovieHtml(movie) {
         movieImg.id = movie.id;
         movieImg.addEventListener('click', () => {
             localStorage.setItem('movie', JSON.stringify(movie));
-            console.log('clicked', movieImg);
         })
 
     let linkToMovieInfoPage = document.createElement('a');
@@ -30,12 +29,18 @@ function createMovieHtml(movie) {
         priceAndAddContainer.classList.add('priceCartItems');
     
     let moviePrice = document.createElement('p');
-        moviePrice.innerText = movie.price + ' Kr' ;
+        if (movie.onSale) {
+            moviePrice.textContent = movie.discountedPrice + ' Kr';
+            moviePrice.style.color = 'green';
+        }
+        if (!movie.onSale) {
+            moviePrice.textContent = movie.price + ' Kr'; 
+        }
+        
     
     let addToCartButton = document.createElement('button');
         addToCartButton.classList.add('fa-solid', 'fa-cart-shopping');
         addToCartButton.addEventListener('click', () => {
-            console.log('clicked cart', movie.id);
             createCart();
             addToCart(movie);
         })

@@ -102,7 +102,6 @@ const button = () => {
         createButton.price = movie.price;
         createButton.textContent = createButton.price + ' Kr';
         createButton.addEventListener('click', () => {
-            console.log('clicked');
             addToCart(movie);
         })
         document.getElementById('btnContainer').appendChild(createButton);

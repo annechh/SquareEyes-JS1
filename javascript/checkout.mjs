@@ -100,7 +100,7 @@ function purchaseButtonHtml() {
         buyButton.classList.add('btn');
         buyButton.addEventListener('click', (event) => {
             event.preventDefault();
-            if (getCart()) {
+            if (getCart().length === 0) {
                 alert('Your cart is empty')
             } else {
                 resetCartsHtml();

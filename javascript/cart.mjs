@@ -7,7 +7,6 @@ export function getCart() {
 
 export function createCart() {
     const cart = localStorage.getItem('cart');
-    // console.log('cart local storage',cart);
     if (!cart) {
         localStorage.setItem('cart', JSON.stringify([]))
     } 
@@ -19,7 +18,6 @@ export function clearCart() {
     
     if (confirmedClear) {
         localStorage.setItem('cart', JSON.stringify([]))
-        console.log('cart is cleared');
         resetCartsHtml();
     } 
 }
@@ -36,7 +34,6 @@ export function addToCart(movie) {
     const cart = getCart();
 
     const movieIndex = cart.findIndex(currentMovie => {
-        console.log('current movie',currentMovie);
         if (movie.id === currentMovie.id) {
             return true;
         }
@@ -54,7 +51,6 @@ export function addToCart(movie) {
 
 
 function removeFromCartByMovieId(movieId) {
-    console.log("Removing movie with ID:", movieId);
     const cart = getCart();
     
     const movieIndex = cart.findIndex((movie) => movie.id === movieId);
@@ -72,7 +68,6 @@ export function removeMovieFromCart(event) {
     let movieId = buttonClicked.parentElement.parentElement.getAttribute('movie-id');
     
     removeFromCartByMovieId(movieId);
-    console.log("Remove button clicked", movieId);
     buttonClicked.parentElement.parentElement.remove();
 
     
