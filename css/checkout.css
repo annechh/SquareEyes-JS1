@@ -134,7 +134,7 @@ label {
 }
 
 .checkbox-field:checked + .checkbox-label {
-    background-image: url("/images/circle.png"); 
+    background-image: url("../images/circle.png"); 
     background-size: cover;
 }
 
