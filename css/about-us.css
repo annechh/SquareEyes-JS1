@@ -1,0 +1,207 @@
+@import url(/css/imports/basic-styles.css);
+
+@import url(/css/imports/header.css);
+@import url(/css/imports/footer.css);
+@import url(/css/imports/hover.css);
+
+@import url(/css/imports/media-header.css);
+@import url(/css/imports/media-footer.css);
+
+
+
+/*=======================Main under=======================*/
+
+main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Removes all text margin */
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
+.h1-box {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--white);
+}
+
+/* Image and text boxes */
+
+.box1, .box2, .box3  {
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.center-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/* Image */
+
+.box1 img, .box2 img {
+    max-width: 500px;
+    height: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.box1 img {
+    justify-self: right;
+}
+
+
+/* Text */
+.textbox1, .textbox2, .textbox3 {
+    max-width: 80%;
+    text-align: center;
+    align-self: center;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 100;
+    padding: 10px 0;
+}
+
+.textbox1 {
+    justify-self: left;
+}
+
+.textbox2 {
+    justify-self: right;
+}
+
+.textbox3 {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    max-width: 100%;
+}
+
+/* Logo */
+
+.iconbox {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.iconbox img {
+    height: 80px;
+}
+
+.border-bottom-box {
+    height: 90px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--white);
+}
+
+
+/* ---------- @Media queries 1400px ---------- */
+
+@media screen and (max-width: 1400px ) {
+
+    main {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .center-box {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 30px;
+    }
+    .img2 {
+        order: 1;
+    }
+    .textbox2 {
+        order: 2;
+    }
+
+    /* Image */
+    .box1 img, .box2 img {
+        justify-self: center;
+    }
+
+    /* Text */
+    .textbox1, .textbox2 {
+        max-width: 100%;
+        justify-self: center;
+    }
+    
+    /* Logo */
+    .iconbox img {
+        height: 70px;
+    }
+}
+
+
+/* ---------- @Media queries 850px ---------- */
+
+@media screen and (max-width: 850px ){
+
+    main {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    h1{
+        font-size: 25px;
+        width: 125px;
+    }
+    /* Image */
+    .box1, .box2, .box3 {
+        padding-top: 30px;
+    }
+    .box1 img, .box2 img {
+        max-width: 270px;
+        padding: 0 5px;
+    }
+    
+
+    /* Text */
+    h4 {
+        font-size: 12px;
+        font-weight: 100;
+        padding: 10px 0;
+    }
+    .textbox1, .textbox2, .textbox3 {
+        padding: 0 15px;
+        max-width: 280px; 
+    }
+
+    .border-bottom-box {
+        height: 80px;
+        width: 125px;
+    }
+    .iconbox {
+        padding-bottom: 0;
+        padding-top: 30px;
+    }
+    /* Logo */
+    .iconbox img {
+        height: 50px;
+    }
+}

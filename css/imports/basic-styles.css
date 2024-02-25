@@ -1,0 +1,28 @@
+:root {
+    --background: #0E0E0E;
+    --white: #d9d9d9;
+    --whitefaded: #d9d9d97c;
+    --green: #06A917;
+    --footer: #0A0A0A;
+    --blackfaded: #141414d4;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    color: var(--white);
+    font-family: 'Cairo', sans-serif;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--white);
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}

@@ -1,0 +1,20 @@
+
+/*----- Menu and Footer -----*/
+
+.logo, li, .profileimg, .footer-logo {
+    transition: 0.3s ease;
+}
+
+li:hover, 
+.logo:hover, 
+.profileimg:hover, 
+.footer-logo:hover,
+.fa-regular:hover,
+.fa-solid:hover,
+.btn:hover,
+.movieImgContainer:hover {
+    transition: 0.3s ease;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    
+    <link rel="icon"  href="/images/logoicon.png" type="image.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <script src="https://kit.fontawesome.com/aacfbda896.js" crossorigin="anonymous"></script>
+    <script type="module" src="/javascript/index.mjs"></script>  
+
+
+    <title>SquareEyes homepage</title>
+</head> 
+
+
+<body>
+    <header class="navmodul">
+        <div class="sectionnav">
+            <span>
+                <a href="/index.html" rel="SquareEyes Homepage"> 
+                <img src="images/logo.png" alt="Webpage Logo" class="logo"></a>
+            </span>
+                <nav class="menu">
+                    <ul>
+                        <li class="home"><a href="/index.html">Home</a></li>
+                        <!-- <li class="movies"><a href="html/movies.html">Movies</a></li> -->
+                        <li class="shop-cart" id="cartIcon"><a href="html/checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <!-- <li class="magglass"><i class="fa-solid fa-magnifying-glass"></i></li> -->
+                    </ul>            
+                </nav>
+            <span>
+            <img src="images/profileimg.png" alt="Profile image" class="profileimg">
+            </span> 
+        </div>    
+    </header>
+
+    <main>
+        <div class="loader" id="loader" style="display: none;"></div>
+        
+        <section class="sortGenreContainer">
+            <details class="sort sortByGenre" id="sortByGenre">
+                <summary>Genre</summary>
+                <ul id="genreList">
+                    <li>Show All</li>
+                    <li>Action</li>
+                    <li>Comedy</li>
+                    <li>Drama</li>
+                    <li>Horror</li>
+                    <li>Kids</li>
+                </ul>
+            </details>
+        </section> 
+
+        <div class="widthStyleMainContent">
+            <div class="movieWrapper" id="movieWrapper"></div>
+        </div>
+        <div id="cartContainer"></div>
+    </main>
+
+    <footer> 
+        <div class="item-block"> 
+            <div>
+                <ul class="footer-info">
+                    <li><a href="/html/contact-us.html"> About Us</a></li>
+                    <li>Follow Us</li>
+                    <li><a href="/html/contact-us.html"> Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-icons">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+            </div>
+            <div class="line-block">
+                <div class="footer-line"></div>
+            </div>
+            <div class="footer-logo-block">
+                <a href="/index.html"> <img src="images/logo.png" 
+                    alt="Webpage Logo" class="footer-logo"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

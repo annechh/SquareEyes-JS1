@@ -1,0 +1,232 @@
+@import url(/css/imports/basic-styles.css);
+
+@import url(/css/imports/header.css);
+@import url(/css/imports/footer.css);
+@import url(/css/imports/hover.css);
+
+@import url(/css/imports/media-header.css);
+@import url(/css/imports/media-footer.css);
+
+
+
+/*=======================Main under=======================*/
+
+main {
+    padding-bottom: 60px;
+    padding-top: 100px;
+}
+
+/* Removes all text margin */
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
+h1 {
+    display: none;
+}
+
+/*------ Background image ------*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Shadow on image */
+
+.shadow-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Items */
+
+.item-container {
+    position: absolute;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Text */
+
+h4 {
+    font-size: 25px;
+}
+
+/* Logo */
+
+.minilogo {
+    max-width: 150px;
+}
+
+/* Text field */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-name, .input-email {
+    width: 500px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: var(--blackfaded);
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: var(--white);
+    border: none;
+    outline: 2px solid var(--whitefaded);
+}
+
+.type-text {
+    width: 500px;
+    height: 200px;
+    background-color: var(--blackfaded);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 16px;
+    color: var(--white);
+    font-family: 'Cairo', sans-serif;
+    border: none;
+    outline: 2px solid var(--whitefaded);
+}
+
+/* Button */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 300px;
+    height: 60px;
+    background-image: 
+    linear-gradient(to bottom, #072531, #106B8D, #106B8D, #072531);
+    color: var(--white);
+    border-radius: 50px;
+    border: none;
+    outline: 2px solid var(--whitefaded);
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transition: 0.3s ease;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* ---------- @Media queries 1400px ---------- */
+
+@media screen and (max-width: 1400px ) {
+
+    /* Text */
+    h4 {
+        font-size: 20px;
+    }
+
+    /* Logo */
+    .minilogo {
+        max-width: 100px;
+    }
+
+    /* Text field */
+    .input-name, .input-email, .type-text {
+        width: 400px;
+    }
+
+    /* Button */
+    .btn {
+        width: 220px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+/* ---------- @Media queries 850px ---------- */
+
+@media screen and (max-width: 850px ) {
+
+    main {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .item-container {
+        position: relative;
+        margin-top: 30px;
+    }
+    .textbox {
+        margin-bottom: 30px;
+    }
+    
+    /* Button */
+    
+    .btn {
+        width: 150px;
+        height: 35px;
+        font-size: 16px;
+        outline: 1px solid var(--whitefaded);
+    }
+}
+
+/* ---------- @Media queries 550px ---------- */
+
+@media screen and (max-width: 550px ) {
+
+    /* Text */
+    .items {
+        justify-content: center;
+    }
+    h4 {
+        font-size: 16px;
+        text-align: center;
+    }
+    /* Logo */
+    .minilogo {
+        display: none;
+    }
+    /* Text field */
+    .input-name, .input-email, .type-text {
+        width: 240px;
+    }
+    .input-name, .input-email {
+        height: 35px;
+    }
+
+    /* Button */
+    .btn {
+        width: 100px;
+        height: 25px;
+        font-size: 12px;
+        outline: 1px solid var(--whitefaded);
+    }
+}

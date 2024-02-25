@@ -1,0 +1,38 @@
+
+@media screen and (max-width: 1400px ) {
+    .navmodul {
+        height: 100px;
+    }
+    .logo, .profileimg {
+        height: 75px;
+    }
+    .menu ul {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 850px ) {
+    .menu ul {
+        gap: 30px
+    }
+}
+
+@media screen and (max-width: 540px ) {
+    .navmodul {
+        height: 75px;
+    }
+    .sectionnav {
+        justify-content: flex-start;
+        padding-left: 15px;
+    }
+    .menu ul {
+        gap: 20px
+    }
+    .logo {
+        display: none;
+    } 
+    .profileimg {
+        height: 50px;
+    }
+}
+

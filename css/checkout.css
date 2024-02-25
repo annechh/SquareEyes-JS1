@@ -1,0 +1,470 @@
+@import url(/css/imports/basic-styles.css);
+
+@import url(/css/imports/header.css);
+@import url(/css/imports/footer.css);
+@import url(/css/imports/hover.css);
+
+@import url(/css/imports/media-header.css);
+@import url(/css/imports/media-footer.css);
+
+
+/*=======================Main under=======================*/
+
+main {
+    padding-bottom: 60px;
+}
+
+h1 {
+    display: none;
+}
+
+.h2box {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+/* ====== Order container ======*/
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.checkout-container {
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    max-height: 600px; */
+    display: flex;
+    justify-content: center;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cart-list {
+    display: flex;
+    gap: 25px;
+}
+
+.imgStyleContainer {
+    max-width: 100px;
+}
+
+.imgStyleContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-container img{
+    
+    box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.349);
+}
+
+.order-container {
+    align-content: space-between;
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.order-style {
+    width: 400px;
+}
+
+.cartTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cartInfo {
+    font-size: 18px;
+}
+
+/* Title and price */
+
+.titlebox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid var(--white);
+    max-height: 70px;
+}
+
+.price {
+    display: grid;
+    justify-content: right;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+/* Payment method, paypal, visa, mastercard */
+
+
+fieldset {
+    border: none;
+}
+
+label {
+    display: grid;
+}
+
+.checkbox-field {
+    display: none; 
+}
+
+.checkbox-label {
+    display: inline-block;
+    width: 25px; 
+    height: 25px; 
+    background-color: var(--background); 
+    border-radius: 50%; 
+    border: 2px solid var(--white); 
+    cursor: pointer;
+}
+
+.checkbox-field:checked + .checkbox-label {
+    background-image: url("/images/circle.png"); 
+    background-size: cover;
+}
+
+.pay-method-img {
+    max-width: 70px;
+}
+
+.payment-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center; 
+    gap: 10px;
+}
+
+.pp {
+    justify-self: end;
+}
+
+.visa {
+    justify-self: center;
+}
+
+.mc {
+    justify-self: left;
+}
+
+.pp, .visa, .mc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Card information */
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.exp-cvc-box {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.typefield {
+    width: 100%; 
+    padding: 10px;
+    height: 50px;
+    box-sizing: border-box;
+    color: var(--white);
+    border: none;
+    background-color: var(--textfield);
+    outline: 2px solid var(--whitefaded);
+    border-radius: 10px;
+    margin-bottom: 20px;
+} 
+
+/*----- Button -----*/
+
+.btn-container {
+    display: grid;
+    gap: 20px;
+}
+
+.btnbox, .cancelbox {
+    display: grid;
+    justify-content: center;
+    /* margin-top: 10px; */
+}
+
+.btn {
+    width: 300px;
+    height: 60px;
+    background-image: 
+    linear-gradient(to bottom, #072531, #106B8D, #106B8D, #072531);
+    color: var(--white);
+    border-radius: 50px;
+    border: none;
+    outline: 2px solid var(--whitefaded);
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transition: 0.3s ease;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/*----- Suggested movies under -----*/
+
+.top-movie-container-margin {
+    margin-top: 100px; 
+}
+
+.container {
+    width: 80%;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.sectionmovies {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.items {
+    display: flex;
+    gap: 1vw;
+}
+
+.title-container {
+    position: relative;
+}
+
+.movie-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.moviecontainer {
+    margin-bottom: 30px;
+}
+
+/* Movie title */
+
+.movie-title {
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+h5 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.small-movie-link {
+    width: 100%;
+    max-height: 100%;
+}
+
+/* Movie image */
+
+.movie-img .movie{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    z-index: 2;
+    box-shadow: 0 0 25px 1px rgba(95, 94, 94, 0.349);
+}
+
+/* Movie image Hover */
+
+.movie-img .movie:hover{
+    transition: 0.3s ease;
+    transform: scale(1.04);
+    cursor: pointer;
+    box-shadow: 0 0 25px 1px rgba(183, 180, 180, 0.349);
+}
+
+
+/* ---------- @Media queries 1400px ---------- */
+
+@media screen and (max-width: 1400px ){
+
+    .h2box {
+        padding-top: 40px;
+        padding-bottom: 80px;  
+    }
+    h2 {
+        font-size: 50px;
+        padding-top: 0px;
+    }
+
+    /* Checkout container */
+    /* Image */
+
+    .img-container img, .order-container {
+        width: 400px;
+        height: 400px;
+    }
+
+    /* Title and price */
+    
+    h3 {
+        font-size: 18px;
+    }
+
+    /* Card information */
+    
+    .typefield {
+        height: 40px;
+    }
+
+    /* Button */
+
+    .btn-container {
+        gap: 5px;
+    }
+    .btn {
+        width: 220px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    /* Movies */
+
+    .container {
+        width: 90%;
+    }
+    .moviecontainer {
+        margin-bottom: 15px;
+    }
+    .movie5{
+        display: none;
+    }    
+}
+
+/* ---------- @Media queries 850px ---------- */
+
+@media screen and (max-width: 850px ){
+
+    main {
+        padding-bottom: 30px;        
+    }
+
+    /* Checkout container */
+
+    .h2box {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    h2 {
+        font-size: 25px;
+        padding-top: 0px;
+    }
+
+    /* Image */
+
+    .img-container {
+        justify-content: center;
+    }
+    .img-container img {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Order container */
+
+    .order-container {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    
+
+    /* Payment */
+    .checkout-container {
+        display: flex;
+        flex-direction: column;
+        max-height: 1200px;
+    }
+
+    /* Title and price */
+
+    .titlebox {
+        justify-self: center;
+        width: 250px;
+    }
+
+    /* Payment method */
+    
+    .checkbox-label {
+        width: 20px; 
+        height: 20px;
+    } 
+
+    /* Card information */
+    
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        width: 250px;
+    }
+    .pay-method-img {
+        max-width: 40px;
+    }
+
+    /* Button */
+
+    .btn {
+        width: 100px;
+        height: 25px;
+        font-size: 12px;
+        outline: 1px solid var(--whitefaded);
+    }
+    
+    /* Movies */
+
+    .top-movie-container-margin {
+        margin-top: 30px;
+    }
+    .container {
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    h4 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    h5 {
+        font-size: 12px;
+    }
+    .items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}

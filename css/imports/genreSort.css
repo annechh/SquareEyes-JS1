@@ -1,0 +1,42 @@
+.sortGenreContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    list-style: none;
+    position: absolute;
+    z-index: 3;
+    top: 250px;
+    
+}
+
+.sortByGenre {
+    width: 100%;
+    display: flex;
+    align-self: center;
+}
+
+.sortGenreContainer summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sortGenreContainer summary:hover {
+    background-color:#000000d8;
+}
+
+.sortGenreContainer ul {
+    background: rgba(0, 0, 0, 0.954);
+    max-width: 150px;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* align-items: center; */
+    border-radius: 5px;
+}

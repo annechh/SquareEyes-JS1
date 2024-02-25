@@ -1,0 +1,29 @@
+
+@media screen and (max-width: 540px ) {
+    .item-block {
+        padding: 20px 0 20px 0;
+    }
+    .footer-info {
+        gap: 20px;
+    }
+    .footer-info {
+        font-size: 14px;
+        margin: 0;
+        padding-bottom: 15px;
+    }
+    .footer-icons {
+        font-size: 18px;
+        margin: 0;
+    }
+    .footer-line {
+        height: 2px;
+        min-width: 100px;
+        margin-top: 15px;
+    }
+    .footer-logo {
+        height: 50px;
+    }
+    .footer-logo-block {
+        padding-top: 15px;
+    }
+}
