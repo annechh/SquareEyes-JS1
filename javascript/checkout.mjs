@@ -79,7 +79,7 @@ function createHtmlForMovie(movie) {
 
 let totalPrice = 0;
 export function displayTotalPrice(movie) {
-    
+    movie??[]
     movie.forEach(movie => {
         totalPrice += movie.price * movie.quantity;
     });
@@ -103,12 +103,16 @@ function purchaseButtonHtml() {
     let buyButton = document.getElementById('buyButton');
         buyButton.classList.add('btn');
         buyButton.addEventListener('click', () => {
-            
-            resetCartsHtml();
-            localStorage.removeItem('cart')
-            alert('Thank you for your purchase')
+            if (getCart()) {
+                alert('Your cart is empty')
+            } else {
+                resetCartsHtml();
+                localStorage.removeItem('cart')
+                alert('Thank you for your purchase')
+            }
         });
 }
+
 
 
 
